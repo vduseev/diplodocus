@@ -1,5 +1,7 @@
 # coding: utf-8
 
+require 'rake'
+
 Gem::Specification.new do |spec|
   spec.name          = "diplodocus"
   spec.version       = "0.1.0"
@@ -7,10 +9,33 @@ Gem::Specification.new do |spec|
   spec.email         = ["vagiz@duseev.com"]
 
   spec.summary       = "Diplodocus is a Jekyll software documentation theme."
-  spec.homepage      = "http://duseev.com/diplodocus/"
+  spec.homepage      = "https://duseev.com/diplodocus/"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
+  #spec.files         = `git ls-files -z`.split("\x0").select {
+    #|f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i)
+  #}
+
+  spec.files = FileList[
+    '_data',
+    '_includes',
+    '_layouts',
+    '_sass',
+    '_tooltips',
+    'assets',
+    'css',
+    'fonts',
+    'images',
+    'js',
+    '404.md',
+    'feed.xml',
+    'LICENSE.txt',
+    'README.md',
+    'search.json',
+    'sitemap.xml',
+    'tooltips.html',
+    'tooltips.json'
+  ].to_a
 
   spec.add_runtime_dependency "jekyll", "~> 3.7"
 
