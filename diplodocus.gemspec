@@ -4,12 +4,12 @@ require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name          = "diplodocus"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.3"
   spec.authors       = ["vduseev"]
   spec.email         = ["vagiz@duseev.com"]
 
   spec.summary       = "Diplodocus is a Jekyll software documentation theme."
-  spec.homepage      = "https://duseev.com/diplodocus/"
+  spec.homepage      = "http://diplodocus.com"
   spec.license       = "MIT"
 
   #spec.files         = `git ls-files -z`.split("\x0").select {
@@ -17,16 +17,16 @@ Gem::Specification.new do |spec|
   #}
 
   spec.files = FileList[
-    '_data',
-    '_includes',
-    '_layouts',
-    '_sass',
-    '_tooltips',
-    'assets',
-    'css',
-    'fonts',
-    'images',
-    'js',
+    '_data/**/*',
+    '_includes/**/*',
+    '_layouts/**/*',
+    '_sass/**/*',
+    '_tooltips/**/*',
+    'assets/**/*',
+    'css/**/*',
+    'fonts/**/*',
+    'images/**/*',
+    'js/**/*',
     '404.md',
     'feed.xml',
     'LICENSE.txt',

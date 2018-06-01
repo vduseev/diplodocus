@@ -16,4 +16,3 @@ Theme updates:
 - added blog feature
 - sidebars configurable per page
 
-{% include links.html %}
