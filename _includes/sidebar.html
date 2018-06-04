@@ -1,8 +1,6 @@
 {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
 
 <ul id="mysidebar" class="nav">
-  <p>{{ site.data | json }}</p>
-  <p>{{ sidebar | json }}</p>
   <li class="sidebarTitle">
     {{sidebar[0].product}} {{sidebar[0].version}}
   </li>
