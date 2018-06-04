@@ -4,7 +4,7 @@ require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name          = "diplodocus"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.4"
   spec.authors       = ["vduseev"]
   spec.email         = ["vagiz@duseev.com"]
 
@@ -38,6 +38,8 @@ Gem::Specification.new do |spec|
   ].to_a
 
   spec.add_runtime_dependency "jekyll", "~> 3.7"
+  # A plugin to read '_config.yml' and data files within Jekyll theme gems
+  spec.add_runtime_dependency "jekyll-data", "~> 1.0"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
