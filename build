@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+rm diplodocus-*.gem
+gem build diplodocus.gemspec
+gem install diplodocus-*.gem
+gem cleanup diplodocus
