@@ -2,9 +2,14 @@
 
 require 'rake'
 
+# Version
+major = 0
+minor = 1
+patch = `git rev-list --count --first-parent HEAD`
+
 Gem::Specification.new do |spec|
   spec.name          = "diplodocus"
-  spec.version       = "0.1.4"
+  spec.version       = "#{major}.#{minor}.#{patch}" 
   spec.authors       = ["vduseev"]
   spec.email         = ["vagiz@duseev.com"]
 
@@ -29,6 +34,7 @@ Gem::Specification.new do |spec|
     'js/**/*',
     '404.md',
     'feed.xml',
+    '_config.yml',
     'LICENSE.txt',
     'README.md',
     'search.json',
