@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+bundle update --local
+bundle exec jekyll serve --host d.test --port 4000
