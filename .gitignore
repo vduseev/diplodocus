@@ -4,3 +4,4 @@
 _site
 Pipfile*
 .DS_Store
+**/*.swp
