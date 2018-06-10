@@ -1,7 +1,13 @@
+# Ignore gem build files
 *.gem
+
 .bundle
 .sass-cache
 _site
 Pipfile*
+
+# MacOS 
 .DS_Store
+
+# Ignore Vim's swp files
 **/*.swp
