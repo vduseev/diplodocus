@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% include head.html %}
+  {% include head.html %}
 </head>
 <body>
 {% include topnav.html %}
@@ -10,25 +10,25 @@
   <div id="main">
     <!-- Content Row -->
     <div class="row">
-        {% assign content_col_size = "col-md-12" %}
-        {% unless page.hide_sidebar %}
-            <!-- Sidebar Column -->
-            <div class="col-md-3" id="tg-sb-sidebar">
-                {% include sidebar.html %}
-            </div>
-            {% assign content_col_size = "col-md-9" %}
-        {% endunless %}
-
-        <!-- Content Column -->
-        <div class="{{content_col_size}}" id="tg-sb-content">
-            {{content}}
+      {% assign content_col_size = "col-md-12" %}
+      {% unless page.hide_sidebar %}
+        <!-- Sidebar Column -->
+        <div class="col-md-3" id="tg-sb-sidebar">
+          {% include sidebar.html %}
         </div>
+        {% assign content_col_size = "col-md-9" %}
+      {% endunless %}
+
+      <!-- Content Column -->
+      <div class="{{content_col_size}}" id="tg-sb-content">
+         {{content}}
+      </div>
     <!-- /.row -->
-</div>
+    </div>
+  <!-- /#main -->
+  </div>
 <!-- /.container -->
 </div>
-<!-- /#main -->
-    </div>
 
 </body>
 {% if site.google_analytics %}
