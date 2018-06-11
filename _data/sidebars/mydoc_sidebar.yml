@@ -204,10 +204,6 @@ entries:
       url: /mydoc_generating_pdfs.html
       output: web, pdf
 
-    - title: Help APIs and UI tooltips
-      url: /mydoc_help_api.html
-      output: web, pdf
-
     - title: Search configuration
       url: /mydoc_search_configuration.html
       output: web, pdf
