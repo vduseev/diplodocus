@@ -1,0 +1,41 @@
+# Main menu of any Diplodocus based documentation
+#
+# Theorizing on menu format:
+# 1. Menus should be in the "menus" dir, not "menu" dir [done]
+# 2. Any menu has 3 levels at max
+# 3. Every page has a menu linked to it in the frontmatter
+# 4. If menu has a "parent" item, them "< Parent" top item is rendered
+# 5. Links without .html
+# 6. Relative links concept
+#    a) Each menu item has a permalink (i.e. "business-requirements")
+#    b) Each page also has a permalink 
+# 7. If menu item has no url, then it is not clickable
+# 8. If the url points to an unexisting page, then menu item is not displayed
+
+items:
+  - 
+    title: Specification Overview
+    url: /index.html
+  - 
+    title: Vision and Scope
+    url: /vision-and-scope/
+    children:
+      - 
+        title: Business Requirements
+        url: /vision-and-scope/business-requirements/
+      - 
+        title: Scope and Limitations
+        url: /vision-and-scope/scope-and-limitations/
+      - 
+        title: Business Context
+        url: /vision-and-scope/business-context/
+  - 
+    title: User Requirements
+    url: /user-requirements/
+    children:
+      - 
+        title: Actors
+        url: /user-requirements/actors/
+      - 
+        title: Use Cases
+        url: /user-requirements/use-cases/
