@@ -14,6 +14,8 @@
 #       Permalink of page is constructed based on menu item (somehow)
 # 7. If menu item has no url, then it is not clickable
 # 8. If the url points to an unexisting page, then menu item is not displayed
+# 9. What if menu is constructed automatically out of pages? Still, some guidance would be required. Isn't that what Diplodocus is about?
+# 10. Add an option to _config to render empty menu items
 
 items:
   - 
