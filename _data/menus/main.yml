@@ -2,13 +2,16 @@
 #
 # Theorizing on menu format:
 # 1. Menus should be in the "menus" dir, not "menu" dir [done]
-# 2. Any menu has 3 levels at max
+# 2. Any menu has 3 levels at max OR every menu has a single level
 # 3. Every page has a menu linked to it in the frontmatter
 # 4. If menu has a "parent" item, them "< Parent" top item is rendered
 # 5. Links without .html
 # 6. Relative links concept
-#    a) Each menu item has a permalink (i.e. "business-requirements")
-#    b) Each page also has a permalink 
+#    a) Each menu item has a url (i.e. "business-requirements")
+#    b) Each page also has a url 
+#    c) Permalink of menu is constructed by concatenation with its parents
+#    d) Permalink of page is constructed based on its location OR
+#       Permalink of page is constructed based on menu item (somehow)
 # 7. If menu item has no url, then it is not clickable
 # 8. If the url points to an unexisting page, then menu item is not displayed
 

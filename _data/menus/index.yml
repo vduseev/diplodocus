@@ -1,0 +1,42 @@
+# This is a concept of a single level MAIN menu
+# Notice how it has no parent field
+# 
+# Concept 1:
+# 1. No YAML menus at all
+# 2. Menu is reconstructed from the hierarchy of pages
+# 3. Each page then specifies a parent page
+# 4. Empty pages are pre-created by Diplodocus
+#    a) store them in the template somehow
+#    b) write a plugin that creates these pages
+#    c) wrap jekyll into a diplodocus executable
+#
+# Concept 2:
+# 1. YAML menus define the overall hierarchy of documentation
+# 2. Menus are stored in a hierarchical fashion in directories
+# 3. Pages are expected to mirror that hierarchy
+# 4. No need to define URLs because structures are mirrored
+#
+# Concept 3:
+# 1. YAML menus define overall hierarchy of documentation
+# 2. Menus are stored in a hierarchical fashion in subdirectories
+# 3. Pages are stored in whatever fashion user desires
+# 4. Individual menus:
+#    a) Menus don't have parent field (it is determined by hierarchy)
+#    b) Each menu has a title field (rendered at the top)
+#    d) Each item in the items list points to the menu
+#       Option 1: Full path to that menu item
+#       Option 2: Unique identified of the menu
+#       Option 3: Hierarchically reconstructed id, where only name
+#       of the menu is specified, but its path is reconstructed.
+#       Note: Can't include top level menus this way!
+#    c) Each menu has a URL field which points to the actual page
+#    e) What if menu structure is determined entirely by directories???
+#       That would be good, because otherwise we are repeating menu paths
+#       twice.
+#       Also you can put a menu item with whatever URL you want inside the
+#       directory.
+# 5. Each directory in the menus has an index.yml file 
+
+title: Home
+url: /index.html
+    
