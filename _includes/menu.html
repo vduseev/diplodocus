@@ -1,0 +1,26 @@
+{% assign menu = site.data.menus %}
+{% comment %}
+Iterate over page's menu path to find the exact menu data
+that corresponds to the page.
+1. An example of page.menu value:
+   /requirements/vision_and_scope/business_requirements
+   Note: surrounding and multiple slashes and are trimmed anyway.
+2. menu_branch array value:
+   [requirements, vision_and_scope, business_requirements]
+{% endcomment %}
+{% assign menu_branch = page.menu | split: "/" %}
+{% for menu_level in menu_branch %}
+  {% assign menu = menu[menu_level] %}
+{% endfor %}
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">{{ menu.item.title }}</li>
+  {% for submenu in menu %}
+    {% if submenu[1].item %}
+      <li>
+        <a href="#">{{ submenu[1].item.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
