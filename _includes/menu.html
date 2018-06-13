@@ -14,17 +14,21 @@ that corresponds to the page.
 {% endfor %}
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">{{ menu.item.title }}</li>
+  <li class="sidebarTitle">
+    {{ menu.item.title }}
+  </li>
   <!-- Render first level of menu -->
   {% for child in menu %}
     {% if child[1].item %}
-      <li>
-        <a href="#">{{ child[1].item.title }}</a>
+      <li {% if page.url == child[1].item.url %}class="active"{% endif %}>
+        <a href="{{ child[1].item.url }}">{{ child[1].item.title }}</a>
         <!-- Render second level of menu -->
         <ul>
           {% for grandchild in child[1] %}
             {% if grandchild[1].item %}
-              <a href="#">{{ grandchild[1].item.title }}</a>
+              <li {% if page.url == grandchild[1].item.url %}class="active"{% endif %}>
+                <a href="{{ grandchild[1].item.url }}">{{ grandchild[1].item.title }}</a>
+              </li>
             {% endif %}
           {% endfor %}
         </ul>

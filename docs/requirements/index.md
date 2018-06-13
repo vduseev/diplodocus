@@ -1,6 +1,6 @@
 ---
 title: Software Requirements Specification
-menu: requirements
+menu: 
 ---
 
 I love to write requirements specifications.
