@@ -5,7 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
-    diplodocus (0.1.11)
+    diplodocus (0.1.56)
       jekyll (~> 3.7)
       jekyll-data (~> 1.0)
     em-websocket (0.5.1)

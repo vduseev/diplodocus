@@ -11,3 +11,7 @@ Pipfile*
 
 # Ignore Vim's swp files
 **/*.swp
+
+pdfconfigs
+licenses
+Gemfile.lock
