@@ -46,6 +46,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", "~> 3.7"
   # A plugin to read '_config.yml' and data files within Jekyll theme gems
   spec.add_runtime_dependency "jekyll-data", "~> 1.0"
+  spec.add_runtime_dependency "liquid-regex"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
